@@ -15,6 +15,12 @@ BOOL APIENTRY DllMain(HMODULE hModule,
     switch (ul_reason_for_call)
     {
     case DLL_PROCESS_ATTACH:
+｛
+MessageBoxW(NULL,
+			L"欢迎您游玩曙光之战\n\n"
+			L"mod作者wen_rui1245，云游四海",
+			L"mod交流一群：559496825", MB_OK);
+｝
     case DLL_THREAD_ATTACH:
     case DLL_THREAD_DETACH:
     case DLL_PROCESS_DETACH:
