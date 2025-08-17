@@ -31,7 +31,7 @@ MessageBoxW(NULL,
 
 DEFINE_HOOK(0x4F4583, GScreenClass_DrawText, 0x6)
 {
-    auto wanted = Drawing::GetTextDimensions(VersionDescription, { 0,0 }, 0, 2, 0);
+    auto wanted = Drawing::GetTextDimensions(VersionDescription, Point2D::Empty, 0);
 
     RectangleStruct rect = {
         DSurface::Composite->GetWidth() - wanted.Width - 10,
