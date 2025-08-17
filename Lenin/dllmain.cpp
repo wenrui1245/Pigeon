@@ -42,7 +42,7 @@ DEFINE_HOOK(0x4F4583, GScreenClass_DrawText, 0x6)
 
     Point2D location{ rect.X + 5,5 };
 
-    DSurface::Composite->FillRect(&rect, COLOR_BLACK);
+   
     DSurface::Composite->DrawRect(&rect, COLOR_CYAN);
     DSurface::Composite->DrawText(VersionDescription, &location, COLOR_CYAN);
     return 0;
